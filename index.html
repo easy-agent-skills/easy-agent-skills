@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>easyagentskills.com · 待售</title>
-    <!-- 清新风格，简洁专业，突出联系方式 -->
+    <!-- 清新风格，简洁专业，突出联系方式 + 域名点击跳转 -->
     <style>
         * {
             margin: 0;
@@ -50,6 +50,20 @@
             border: 1px solid rgba(0, 110, 230, 0.25);
             margin-bottom: 1.5rem;
             backdrop-filter: blur(4px);
+        }
+
+        /* 让h1里的链接继承样式，无下划线，悬浮变色 */
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.15s ease, text-shadow 0.15s ease;
+            display: inline-block; /* 保证精准点击区域 */
+        }
+
+        h1 a:hover {
+            color: #1d6bb8;
+            text-shadow: 0 2px 8px rgba(0,100,200,0.15);
+            cursor: pointer;
         }
 
         h1 {
@@ -237,6 +251,17 @@
             padding-top: 1.2rem;
         }
 
+        .footer-note a {
+            color: #2b5f8a;
+            text-decoration: none;
+            border-bottom: 1px dotted #91b9da;
+        }
+
+        .footer-note a:hover {
+            color: #0b2f4a;
+            border-bottom: 1px solid #0b2f4a;
+        }
+
         /* 移动端调整 */
         @media (max-width: 550px) {
             .card {
@@ -265,8 +290,12 @@
     <!-- 小标识 -->
     <div class="domain-badge">⚡ premium domain · 直接购买</div>
 
-    <!-- 醒目域名 -->
-    <h1>easyagentskills<span class="domain-extension">.com</span></h1>
+    <!-- 醒目域名 —— 现在可点击跳转 https://EASYAGENTSKILLS.com （统一小写但链接正确） -->
+    <h1>
+        <a href="https://EASYAGENTSKILLS.COM" target="_blank" rel="noopener noreferrer">
+            easyagentskills<span class="domain-extension">.com</span>
+        </a>
+    </h1>
     <div class="tagline">智能体技能 · 未来域名 · 即刻锁定</div>
 
     <!-- 信任徽章 (简洁) -->
@@ -332,9 +361,9 @@
         <span>✉️ 发送邮件 / 添加微信请备注“域名”</span>
     </div>
 
-    <!-- 附加说明 (方便直接阅读) -->
+    <!-- 附加说明 (方便直接阅读) 并且此处也加一个简洁链接，但主要链接已在h1) -->
     <div class="footer-note">
-        easyagentskills.com · 出售给有远见的创造者 · 所有联系方式已验证
+        <a href="https://EASYAGENTSKILLS.COM" target="_blank" rel="noopener noreferrer">EASYAGENTSKILLS.COM</a> · 出售给有远见的创造者 · 所有联系方式已验证
     </div>
 </div>
 
